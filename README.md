@@ -4,22 +4,35 @@ A modern, responsive travel website crafted for explorers who seek unforgettable
 
 WanderLust is a premium multi-page travel website designed to showcase curated destinations, immersive travel experiences, and seamless user interaction. Built with clean UI/UX principles and responsive design, it delivers a visually engaging experience across all devices.
 
+
 ✨ Live Preview
 
 (Add your deployed link here if hosted on Vercel / Netlify / GitHub Pages)
 
+
 🚀 Features
 
 ✅ Stunning Hero Section with smart search functionality
+
 ✅ Popular & Featured Destinations section
+
 ✅ Category-based filtering (Beach, Mountains, Adventure, Culture, City, Scenic)
+
 ✅ Animated Statistics Section
+
 ✅ Traveler Testimonials Section
+
 ✅ Newsletter Subscription Form
+
 ✅ Fully Responsive (Mobile-First Design)
+
 ✅ Modern UI with smooth animations
+
 ✅ Sticky Navbar with responsive menu toggle
+
 ✅ Multi-page layout (Home, Destinations, About, Contact)
+
+
 
 🛠️ Tech Stack
 
@@ -31,21 +44,34 @@ WanderLust is a premium multi-page travel website designed to showcase curated d
 
 ✅ Font Awesome Icons
 
+
 📂 Project Structure
 WanderLust/
 │
 ├── index.html
+
 ├── destinations.html
+
 ├── about.html
+
 ├── contact.html
+
 │
+
 ├── css/
+
 │   └── style.css
+
 │
+
 ├── js/
+
 │   └── script.js
+
 │
+
 └── assets/
+
 
 🎯 Project Objective
 
@@ -60,11 +86,17 @@ WanderLust/
 🔮 Future Improvements
 
 ⬜ User Authentication (Login/Register)
+
 ⬜ Booking System Integration
+
 ⬜ Payment Gateway Integration
+
 ⬜ Backend with Node.js & MongoDB
+
 ⬜ Admin Dashboard
+
 ⬜ API-based dynamic destinations
+
 
 📱 Responsive Design
 
