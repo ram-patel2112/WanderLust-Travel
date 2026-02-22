@@ -1,0 +1,231 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>WanderLust — Discover Your Next Adventure</title>
+  <meta name="description" content="Premium travel experiences crafted for the modern explorer. Book unforgettable tours to the world's most stunning destinations.">
+  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.1/css/all.min.css">
+  <link rel="stylesheet" href="css/style.css">
+</head>
+<body class="home-page">
+
+  <!-- HEADER -->
+  <header>
+    <div class="container">
+      <nav class="navbar">
+        <a href="index.html" class="logo"><i class="fas fa-compass"></i> WanderLust</a>
+        <ul class="nav-links">
+          <li><a href="index.html" class="nav-link active">Home</a></li>
+          <li><a href="destinations.html" class="nav-link">Destinations</a></li>
+          <li><a href="about.html" class="nav-link">About</a></li>
+          <li><a href="contact.html" class="nav-link">Contact</a></li>
+          <li><a href="destinations.html" class="btn-book">Book a Tour</a></li>
+        </ul>
+        <button class="menu-toggle" aria-label="Toggle menu"><i class="fas fa-bars"></i></button>
+      </nav>
+    </div>
+  </header>
+
+  <!-- HERO -->
+  <section class="hero">
+    <div class="hero-bg"></div>
+    <div class="hero-overlay"></div>
+    <div class="container">
+      <div class="hero-content">
+        <div class="hero-badge"><i class="fas fa-star"></i> #1 Rated Travel Agency 2025</div>
+        <h1>Explore The World<br>With <span>WanderLust</span></h1>
+        <p>Curated journeys to the most breathtaking corners of our planet. Every trip is a story waiting to be told.</p>
+        <div class="hero-actions">
+          <a href="destinations.html" class="btn btn-secondary btn-lg"><i class="fas fa-map-marked-alt"></i> Explore Destinations</a>
+          <a href="about.html" class="btn btn-outline btn-lg"><i class="fas fa-play-circle"></i> Our Story</a>
+        </div>
+
+        <!-- SEARCH BOX -->
+        <div class="hero-search">
+          <form class="search-card" id="hero-search-form" onsubmit="handleHeroSearch(event)">
+            <div class="search-field">
+              <label for="hero-dest"><i class="fas fa-map-marker-alt"></i> Destination</label>
+              <input type="text" id="hero-dest" placeholder="Where do you want to go?">
+            </div>
+            <div class="search-field">
+              <label for="hero-type"><i class="fas fa-tag"></i> Category</label>
+              <select id="hero-type">
+                <option value="all">All Categories</option>
+                <option value="beach">Beach & Islands</option>
+                <option value="mountain">Mountains</option>
+                <option value="adventure">Adventure</option>
+                <option value="culture">Culture & Heritage</option>
+                <option value="city">City Escapes</option>
+                <option value="scenic">Scenic Routes</option>
+              </select>
+            </div>
+            <div class="search-field">
+              <label for="hero-when"><i class="fas fa-calendar-alt"></i> When</label>
+              <input type="month" id="hero-when">
+            </div>
+            <button type="submit" class="btn btn-primary btn-lg" style="border-radius: var(--radius-md);">
+              <i class="fas fa-search"></i> Search
+            </button>
+          </form>
+        </div>
+
+        <!-- STATS -->
+        <div class="hero-stats">
+          <div class="stat-item">
+            <span class="stat-num">15K+</span>
+            <div class="stat-label">Happy Travelers</div>
+          </div>
+          <div class="stat-divider"></div>
+          <div class="stat-item">
+            <span class="stat-num">95+</span>
+            <div class="stat-label">Destinations</div>
+          </div>
+          <div class="stat-divider"></div>
+          <div class="stat-item">
+            <span class="stat-num">4.9★</span>
+            <div class="stat-label">Average Rating</div>
+          </div>
+          <div class="stat-divider"></div>
+          <div class="stat-item">
+            <span class="stat-num">12YR</span>
+            <div class="stat-label">Of Experience</div>
+          </div>
+        </div>
+      </div>
+    </div>
+    <div class="scroll-down">
+      <span>Scroll Down</span>
+      <i class="fas fa-chevron-down"></i>
+    </div>
+  </section>
+
+  <!-- FEATURED DESTINATIONS -->
+  <section class="section">
+    <div class="container">
+      <div class="text-center reveal">
+        <span class="section-tag">✈️ Top Picks</span>
+        <h2 class="section-title">Popular Destinations</h2>
+        <p class="section-sub">Handpicked getaways loved by thousands of travelers. Find your next adventure below.</p>
+      </div>
+      <div id="home-dest-grid" class="destinations-grid"></div>
+      <div class="text-center" style="margin-top: 3rem;">
+        <a href="destinations.html" class="btn btn-ghost btn-lg reveal">View All Destinations <i class="fas fa-arrow-right"></i></a>
+      </div>
+    </div>
+  </section>
+
+  <!-- WHY CHOOSE US -->
+  <section class="section" style="background: var(--white);">
+    <div class="container">
+      <div class="text-center reveal">
+        <span class="section-tag">💎 Why WanderLust</span>
+        <h2 class="section-title">Travel Smarter, Not Harder</h2>
+        <p class="section-sub">We handle every detail so you can focus on what matters — making memories.</p>
+      </div>
+      <div class="features-grid">
+        <div class="feature-card reveal">
+          <div class="feature-icon"><i class="fas fa-shield-alt"></i></div>
+          <h3>100% Safe & Insured</h3>
+          <p>Every tour includes comprehensive travel insurance and 24/7 emergency support worldwide.</p>
+        </div>
+        <div class="feature-card reveal">
+          <div class="feature-icon"><i class="fas fa-hand-holding-heart"></i></div>
+          <h3>Expertly Crafted Trips</h3>
+          <p>Our experienced travel designers create personalised itineraries tailored to your dream.</p>
+        </div>
+        <div class="feature-card reveal">
+          <div class="feature-icon"><i class="fas fa-dollar-sign"></i></div>
+          <h3>Best Price Guarantee</h3>
+          <p>Find it cheaper elsewhere? We'll match the price, no questions asked.</p>
+        </div>
+        <div class="feature-card reveal">
+          <div class="feature-icon"><i class="fas fa-headset"></i></div>
+          <h3>24/7 Dedicated Support</h3>
+          <p>Real humans available round-the-clock to assist you before, during, and after your trip.</p>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <!-- TESTIMONIALS -->
+  <section class="section">
+    <div class="container">
+      <div class="text-center reveal">
+        <span class="section-tag">💬 Traveler Stories</span>
+        <h2 class="section-title">What Our Guests Say</h2>
+        <p class="section-sub">Real experiences from real travelers who trusted us with their adventures.</p>
+      </div>
+      <div id="testimonials-grid" class="testimonials-grid"></div>
+    </div>
+  </section>
+
+  <!-- NEWSLETTER -->
+  <section class="newsletter-section">
+    <div class="container">
+      <h2>Get Inspired Every Week</h2>
+      <p>Subscribe for exclusive travel deals, destination guides, and wanderlust-inducing stories.</p>
+      <form class="newsletter-form" id="newsletter-form">
+        <input type="email" placeholder="Enter your email address" required>
+        <button type="submit">Subscribe <i class="fas fa-paper-plane"></i></button>
+      </form>
+      <p style="margin-top:1rem;font-size:0.82rem;opacity:0.6">✓ No spam &nbsp;&nbsp; ✓ Unsubscribe anytime &nbsp;&nbsp; ✓ Join 50,000+ subscribers</p>
+    </div>
+  </section>
+
+  <!-- FOOTER -->
+  <footer>
+    <div class="container">
+      <div class="footer-grid">
+        <div class="footer-brand">
+          <a href="index.html" class="logo"><i class="fas fa-compass"></i> WanderLust</a>
+          <p>Crafting unforgettable travel experiences since 2012. Your journey, our passion.</p>
+          <div class="footer-socials">
+            <a href="#" aria-label="Facebook"><i class="fab fa-facebook-f"></i></a>
+            <a href="#" aria-label="Instagram"><i class="fab fa-instagram"></i></a>
+            <a href="#" aria-label="Twitter"><i class="fab fa-twitter"></i></a>
+            <a href="#" aria-label="YouTube"><i class="fab fa-youtube"></i></a>
+            <a href="#" aria-label="Pinterest"><i class="fab fa-pinterest"></i></a>
+          </div>
+        </div>
+        <div class="footer-col">
+          <h4>Explore</h4>
+          <ul>
+            <li><a href="destinations.html">All Destinations</a></li>
+            <li><a href="destinations.html?cat=beach">Beach Getaways</a></li>
+            <li><a href="destinations.html?cat=mountain">Mountain Retreats</a></li>
+            <li><a href="destinations.html?cat=adventure">Adventure Tours</a></li>
+            <li><a href="destinations.html?cat=culture">Cultural Trips</a></li>
+          </ul>
+        </div>
+        <div class="footer-col">
+          <h4>Company</h4>
+          <ul>
+            <li><a href="about.html">About Us</a></li>
+            <li><a href="about.html#team">Our Team</a></li>
+            <li><a href="contact.html">Contact</a></li>
+            <li><a href="contact.html#faq">FAQ</a></li>
+            <li><a href="#">Careers</a></li>
+          </ul>
+        </div>
+        <div class="footer-col">
+          <h4>Support</h4>
+          <ul>
+            <li><a href="#">Booking Policy</a></li>
+            <li><a href="#">Cancellation Policy</a></li>
+            <li><a href="#">Travel Insurance</a></li>
+            <li><a href="#">Privacy Policy</a></li>
+            <li><a href="#">Terms of Service</a></li>
+          </ul>
+        </div>
+      </div>
+      <div class="footer-bottom">
+        <span>© 2025 WanderLust Travel. All rights reserved.</span>
+        <span>Made with <i class="fas fa-heart" style="color:var(--secondary)"></i> for explorers</span>
+      </div>
+    </div>
+  </footer>
+
+  <script src="js/script.js"></script>
+</body>
+</html>

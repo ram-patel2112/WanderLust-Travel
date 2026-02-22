@@ -1,0 +1,345 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title id="tour-page-title">Tour Detail — WanderLust</title>
+    <meta name="description"
+        content="Explore detailed itineraries, inclusions, and book your dream tour with WanderLust.">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.1/css/all.min.css">
+    <link rel="stylesheet" href="css/style.css">
+</head>
+
+<body>
+
+    <!-- HEADER -->
+    <header class="scrolled">
+        <div class="container">
+            <nav class="navbar">
+                <a href="index.html" class="logo"><i class="fas fa-compass"></i> WanderLust</a>
+                <ul class="nav-links">
+                    <li><a href="index.html" class="nav-link">Home</a></li>
+                    <li><a href="destinations.html" class="nav-link active">Destinations</a></li>
+                    <li><a href="about.html" class="nav-link">About</a></li>
+                    <li><a href="contact.html" class="nav-link">Contact</a></li>
+                    <li><a href="destinations.html" class="btn-book">Book a Tour</a></li>
+                </ul>
+                <button class="menu-toggle" aria-label="Toggle menu"><i class="fas fa-bars"></i></button>
+            </nav>
+        </div>
+    </header>
+
+    <!-- BREADCRUMB -->
+    <div style="background:var(--white);padding:1rem 0;margin-top:72px;border-bottom:1px solid var(--border);">
+        <div class="container" style="display:flex;align-items:center;gap:0.5rem;font-size:0.9rem;color:var(--muted);">
+            <a href="index.html" style="color:var(--muted)">Home</a>
+            <i class="fas fa-chevron-right" style="font-size:0.7rem"></i>
+            <a href="destinations.html" style="color:var(--muted)">Destinations</a>
+            <i class="fas fa-chevron-right" style="font-size:0.7rem"></i>
+            <span id="tour-title" style="color:var(--text);font-weight:600">Tour Detail</span>
+        </div>
+    </div>
+
+    <main class="section">
+        <div class="container">
+
+            <!-- GALLERY -->
+            <div class="tour-gallery reveal">
+                <div class="gallery-main">
+                    <img id="tour-main-img"
+                        src="https://images.unsplash.com/photo-1613395877344-13d4a8e0d49e?q=80&w=1200"
+                        alt="Tour destination">
+                </div>
+                <div class="gallery-side">
+                    <img src="https://images.unsplash.com/photo-1533104816931-20fa691ff6ca?q=80&w=600" alt="Gallery 2">
+                </div>
+                <div class="gallery-more">
+                    <img src="https://images.unsplash.com/photo-1506905925346-21bda4d32df4?q=80&w=600" alt="Gallery 3">
+                    <div class="gallery-more-label">+8 Photos</div>
+                </div>
+            </div>
+
+            <!-- TOUR LAYOUT -->
+            <div class="tour-layout">
+
+                <!-- LEFT: INFO & TABS -->
+                <div class="tour-info">
+                    <div class="reveal">
+                        <span class="section-tag">✈️ Premium Tour Package</span>
+                        <h1 class="section-title" id="tour-title-h" style="text-align:left;margin-bottom:1rem">
+                            Destination</h1>
+                        <div id="tour-meta"
+                            style="display:flex;flex-wrap:wrap;gap:1.5rem;color:var(--muted);font-size:0.92rem;margin-bottom:1.5rem;">
+                        </div>
+                        <p id="tour-desc" style="color:var(--muted);font-size:1rem;line-height:1.8;margin-bottom:2rem;">
+                        </p>
+                    </div>
+
+                    <!-- TABS -->
+                    <div class="tabs-nav reveal">
+                        <button class="tab-btn active" data-tab="tab-overview">Overview</button>
+                        <button class="tab-btn" data-tab="tab-itinerary">Itinerary</button>
+                        <button class="tab-btn" data-tab="tab-inclusions">Inclusions</button>
+                        <button class="tab-btn" data-tab="tab-info">Info</button>
+                    </div>
+
+                    <!-- OVERVIEW -->
+                    <div id="tab-overview" class="tab-content active reveal">
+                        <p style="color:var(--muted);line-height:1.9;margin-bottom:2rem">This premium tour package is
+                            designed for the curious traveller who wants to experience the best of this destination
+                            without the usual hassle. Every day is thoughtfully curated to balance guided exploration
+                            with free time to wander on your own.</p>
+                        <div style="display:grid;grid-template-columns:1fr 1fr;gap:1.5rem;margin-top:2rem">
+                            <div
+                                style="background:var(--white);border-radius:var(--radius-md);padding:1.5rem;border:1px solid var(--border);">
+                                <i class="fas fa-users"
+                                    style="color:var(--primary);font-size:1.5rem;margin-bottom:0.75rem;display:block"></i>
+                                <h4 style="font-weight:700;margin-bottom:0.4rem">Group Size</h4>
+                                <p style="color:var(--muted);font-size:0.9rem">Max 12 travelers per group for a
+                                    personalised experience</p>
+                            </div>
+                            <div
+                                style="background:var(--white);border-radius:var(--radius-md);padding:1.5rem;border:1px solid var(--border);">
+                                <i class="fas fa-language"
+                                    style="color:var(--primary);font-size:1.5rem;margin-bottom:0.75rem;display:block"></i>
+                                <h4 style="font-weight:700;margin-bottom:0.4rem">Languages</h4>
+                                <p style="color:var(--muted);font-size:0.9rem">Tours available in English, Spanish,
+                                    French and German</p>
+                            </div>
+                            <div
+                                style="background:var(--white);border-radius:var(--radius-md);padding:1.5rem;border:1px solid var(--border);">
+                                <i class="fas fa-walking"
+                                    style="color:var(--primary);font-size:1.5rem;margin-bottom:0.75rem;display:block"></i>
+                                <h4 style="font-weight:700;margin-bottom:0.4rem">Fitness Level</h4>
+                                <p style="color:var(--muted);font-size:0.9rem">Moderate — suitable for most able-bodied
+                                    adults</p>
+                            </div>
+                            <div
+                                style="background:var(--white);border-radius:var(--radius-md);padding:1.5rem;border:1px solid var(--border);">
+                                <i class="fas fa-child"
+                                    style="color:var(--primary);font-size:1.5rem;margin-bottom:0.75rem;display:block"></i>
+                                <h4 style="font-weight:700;margin-bottom:0.4rem">Age Range</h4>
+                                <p style="color:var(--muted);font-size:0.9rem">Suitable for travelers aged 12 and above
+                                </p>
+                            </div>
+                        </div>
+                    </div>
+
+                    <!-- ITINERARY -->
+                    <div id="tab-itinerary" class="tab-content reveal">
+                        <div class="itinerary-day">
+                            <h4>Day 1 — Arrival & Welcome</h4>
+                            <p>Arrive at your destination and transfer to your luxury accommodation. Enjoy a welcome
+                                dinner and briefing session with your WanderLust guide.</p>
+                        </div>
+                        <div class="itinerary-day">
+                            <h4>Day 2 — Iconic Highlights Tour</h4>
+                            <p>Full-day guided tour of the must-see landmarks. Enjoy a scenic viewpoint picnic lunch
+                                with panoramic views.</p>
+                        </div>
+                        <div class="itinerary-day">
+                            <h4>Day 3 — Cultural Immersion</h4>
+                            <p>Visit local markets, meet artisans, and take a cooking class with a local chef. Evening
+                                free for personal exploration.</p>
+                        </div>
+                        <div class="itinerary-day">
+                            <h4>Day 4 — Adventure Day</h4>
+                            <p>Optional adventure activities (hiking, snorkelling, or cycling). Relaxed afternoon by the
+                                water.</p>
+                        </div>
+                        <div class="itinerary-day">
+                            <h4>Day 5 — Hidden Gems</h4>
+                            <p>Off-the-beaten-path excursion discovering secret spots most tourists never see. Sunset
+                                cocktail hour.</p>
+                        </div>
+                        <div class="itinerary-day">
+                            <h4>Day 6 — Leisure & Farewell</h4>
+                            <p>Free morning for shopping or relaxation. Farewell group dinner at a top-rated local
+                                restaurant.</p>
+                        </div>
+                        <div class="itinerary-day">
+                            <h4>Day 7 — Departure</h4>
+                            <p>Transfer to the airport. Your WanderLust adventure ends here — until the next one!</p>
+                        </div>
+                    </div>
+
+                    <!-- INCLUSIONS -->
+                    <div id="tab-inclusions" class="tab-content reveal">
+                        <h3 style="font-weight:700;margin-bottom:1.5rem">What's Included</h3>
+                        <div class="inclusion-list">
+                            <div class="inclusion-item yes"><i class="fas fa-check-circle"></i> Return flights (economy)
+                            </div>
+                            <div class="inclusion-item yes"><i class="fas fa-check-circle"></i> 4-star hotel
+                                accommodation</div>
+                            <div class="inclusion-item yes"><i class="fas fa-check-circle"></i> Daily breakfast & dinner
+                            </div>
+                            <div class="inclusion-item yes"><i class="fas fa-check-circle"></i> All transfers &
+                                transport</div>
+                            <div class="inclusion-item yes"><i class="fas fa-check-circle"></i> Expert English-speaking
+                                guide</div>
+                            <div class="inclusion-item yes"><i class="fas fa-check-circle"></i> All entrance fees &
+                                permits</div>
+                            <div class="inclusion-item yes"><i class="fas fa-check-circle"></i> Travel insurance</div>
+                            <div class="inclusion-item yes"><i class="fas fa-check-circle"></i> 24/7 WanderLust support
+                            </div>
+                            <div class="inclusion-item no"><i class="fas fa-times-circle"></i> Personal shopping
+                                expenses</div>
+                            <div class="inclusion-item no"><i class="fas fa-times-circle"></i> Optional activity
+                                upgrades</div>
+                            <div class="inclusion-item no"><i class="fas fa-times-circle"></i> Visa fees (if applicable)
+                            </div>
+                            <div class="inclusion-item no"><i class="fas fa-times-circle"></i> Non-included meals</div>
+                        </div>
+                    </div>
+
+                    <!-- INFO -->
+                    <div id="tab-info" class="tab-content reveal">
+                        <div style="display:flex;flex-direction:column;gap:1.5rem">
+                            <div
+                                style="background:var(--white);border-radius:var(--radius-md);padding:1.5rem;border:1px solid var(--border);">
+                                <h4 style="font-weight:700;margin-bottom:1rem;color:var(--primary)"><i
+                                        class="fas fa-credit-card"></i> Payment</h4>
+                                <p style="color:var(--muted);font-size:0.92rem">Secure your spot with a 20% deposit.
+                                    Balance due 60 days before departure. We accept all major cards, bank transfers, and
+                                    PayPal.</p>
+                            </div>
+                            <div
+                                style="background:var(--white);border-radius:var(--radius-md);padding:1.5rem;border:1px solid var(--border);">
+                                <h4 style="font-weight:700;margin-bottom:1rem;color:var(--primary)"><i
+                                        class="fas fa-undo"></i> Cancellation Policy</h4>
+                                <p style="color:var(--muted);font-size:0.92rem">Cancel 90+ days before: full refund.
+                                    45-89 days: 50% refund. Under 45 days: no refund (travel insurance covers most
+                                    unexpected events).</p>
+                            </div>
+                            <div
+                                style="background:rgba(34,197,94,0.08);border-radius:var(--radius-md);padding:1.5rem;border:1px solid rgba(34,197,94,0.2);">
+                                <h4 style="font-weight:700;margin-bottom:0.5rem;color:var(--success)"><i
+                                        class="fas fa-shield-alt"></i> Book With Confidence</h4>
+                                <p style="color:var(--muted);font-size:0.92rem">We offer a Best Price Guarantee and free
+                                    rebooking in case of disruption. Your safety is our priority.</p>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+
+                <!-- RIGHT: BOOKING WIDGET -->
+                <div>
+                    <div class="booking-widget reveal">
+                        <div class="booking-price" id="tour-price">$0 <span>/ person</span></div>
+                        <div
+                            style="display:flex;align-items:center;gap:0.5rem;color:var(--muted);font-size:0.87rem;margin-bottom:0.5rem">
+                            <i class="fas fa-star" style="color:var(--accent)"></i>
+                            <span id="tour-rating-widget">4.9 · Excellent</span>
+                        </div>
+                        <hr style="border:none;border-top:1px solid var(--border);margin:1.2rem 0">
+                        <form class="booking-form" id="booking-form">
+                            <div class="form-group">
+                                <label>Full Name</label>
+                                <input type="text" placeholder="Your full name" required>
+                            </div>
+                            <div class="form-group">
+                                <label>Email Address</label>
+                                <input type="email" placeholder="name@email.com" required>
+                            </div>
+                            <div class="form-group">
+                                <label>Phone Number</label>
+                                <input type="tel" placeholder="+1 234 567 8900">
+                            </div>
+                            <div style="display:grid;grid-template-columns:1fr 1fr;gap:0.8rem">
+                                <div class="form-group">
+                                    <label>Travel Date</label>
+                                    <input type="date" required>
+                                </div>
+                                <div class="form-group">
+                                    <label>Travelers</label>
+                                    <select>
+                                        <option>1 person</option>
+                                        <option>2 people</option>
+                                        <option>3 people</option>
+                                        <option>4+ people</option>
+                                    </select>
+                                </div>
+                            </div>
+                            <div class="form-group">
+                                <label>Special Requests</label>
+                                <textarea
+                                    placeholder="Any dietary needs, accessibility requirements, or special occasions..."></textarea>
+                            </div>
+                            <button type="submit" class="btn btn-primary"
+                                style="width:100%;border-radius:var(--radius-md)">
+                                <i class="fas fa-lock"></i> Book This Tour
+                            </button>
+                            <p style="text-align:center;font-size:0.8rem;color:var(--muted);margin-top:0.8rem">
+                                <i class="fas fa-shield-alt" style="color:var(--success)"></i> Free cancellation · No
+                                hidden fees
+                            </p>
+                        </form>
+                    </div>
+
+                    <!-- NEED HELP -->
+                    <div style="background:var(--white);border-radius:var(--radius-lg);padding:1.5rem;margin-top:1.5rem;border:1px solid var(--border);text-align:center;"
+                        class="reveal">
+                        <i class="fas fa-headset"
+                            style="font-size:2rem;color:var(--primary);margin-bottom:0.75rem;display:block"></i>
+                        <h4 style="font-weight:700;margin-bottom:0.5rem">Need Help Deciding?</h4>
+                        <p style="color:var(--muted);font-size:0.88rem;margin-bottom:1rem">Talk to one of our travel
+                            experts for personalised advice.</p>
+                        <a href="contact.html" class="btn btn-ghost"
+                            style="width:100%;border-radius:var(--radius-md)">Chat With an Expert</a>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </main>
+
+    <!-- FOOTER -->
+    <footer>
+        <div class="container">
+            <div class="footer-grid">
+                <div class="footer-brand">
+                    <a href="index.html" class="logo"><i class="fas fa-compass"></i> WanderLust</a>
+                    <p>Crafting unforgettable travel experiences since 2012.</p>
+                    <div class="footer-socials">
+                        <a href="#"><i class="fab fa-facebook-f"></i></a>
+                        <a href="#"><i class="fab fa-instagram"></i></a>
+                        <a href="#"><i class="fab fa-twitter"></i></a>
+                        <a href="#"><i class="fab fa-youtube"></i></a>
+                    </div>
+                </div>
+                <div class="footer-col">
+                    <h4>Explore</h4>
+                    <ul>
+                        <li><a href="destinations.html">All Destinations</a></li>
+                        <li><a href="destinations.html?cat=beach">Beach Getaways</a></li>
+                        <li><a href="destinations.html?cat=adventure">Adventure Tours</a></li>
+                    </ul>
+                </div>
+                <div class="footer-col">
+                    <h4>Company</h4>
+                    <ul>
+                        <li><a href="about.html">About Us</a></li>
+                        <li><a href="contact.html">Contact</a></li>
+                        <li><a href="contact.html#faq">FAQ</a></li>
+                    </ul>
+                </div>
+                <div class="footer-col">
+                    <h4>Support</h4>
+                    <ul>
+                        <li><a href="#">Booking Policy</a></li>
+                        <li><a href="#">Cancellation Policy</a></li>
+                        <li><a href="#">Privacy Policy</a></li>
+                    </ul>
+                </div>
+            </div>
+            <div class="footer-bottom">
+                <span>© 2025 WanderLust Travel. All rights reserved.</span>
+                <span>Made with <i class="fas fa-heart" style="color:var(--secondary)"></i> for explorers</span>
+            </div>
+        </div>
+    </footer>
+
+    <script src="js/script.js"></script>
+</body>
+
+</html>

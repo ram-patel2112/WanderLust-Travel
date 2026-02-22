@@ -1,0 +1,164 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Destinations — WanderLust Travel</title>
+    <meta name="description"
+        content="Browse 90+ handpicked destinations across every continent. Filter by category, budget, or continent.">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.1/css/all.min.css">
+    <link rel="stylesheet" href="css/style.css">
+</head>
+
+<body>
+
+    <!-- HEADER -->
+    <header class="scrolled">
+        <div class="container">
+            <nav class="navbar">
+                <a href="index.html" class="logo"><i class="fas fa-compass"></i> WanderLust</a>
+                <ul class="nav-links">
+                    <li><a href="index.html" class="nav-link">Home</a></li>
+                    <li><a href="destinations.html" class="nav-link active">Destinations</a></li>
+                    <li><a href="about.html" class="nav-link">About</a></li>
+                    <li><a href="contact.html" class="nav-link">Contact</a></li>
+                    <li><a href="destinations.html" class="btn-book">Book a Tour</a></li>
+                </ul>
+                <button class="menu-toggle" aria-label="Toggle menu"><i class="fas fa-bars"></i></button>
+            </nav>
+        </div>
+    </header>
+
+    <!-- PAGE HERO -->
+    <section class="page-hero">
+        <div class="page-hero-content">
+            <span class="section-tag" style="background:rgba(255,255,255,0.15);color:rgba(255,255,255,0.9)">✈️ 12
+                Destinations & Counting</span>
+            <h1>Explore Our Destinations</h1>
+            <p>From sun-kissed beaches to snow-capped peaks — discover the world's most incredible places.</p>
+        </div>
+    </section>
+
+    <!-- FILTERS & GRID -->
+    <section class="section">
+        <div class="container">
+
+            <!-- Filter Bar -->
+            <div class="filters-bar reveal">
+                <div class="filter-group" style="flex:2; min-width:200px;">
+                    <label><i class="fas fa-search"></i> Search</label>
+                    <input type="text" id="filter-search" placeholder="Search destination or country...">
+                </div>
+                <div class="filter-group">
+                    <label><i class="fas fa-globe-americas"></i> Continent</label>
+                    <select id="filter-continent">
+                        <option value="all">All Continents</option>
+                        <option value="europe">Europe</option>
+                        <option value="asia">Asia</option>
+                        <option value="americas">Americas</option>
+                        <option value="africa">Africa</option>
+                    </select>
+                </div>
+                <div class="filter-group">
+                    <label><i class="fas fa-tag"></i> Category</label>
+                    <select id="filter-category">
+                        <option value="all">All Categories</option>
+                        <option value="beach">Beach</option>
+                        <option value="mountain">Mountain</option>
+                        <option value="adventure">Adventure</option>
+                        <option value="culture">Culture</option>
+                        <option value="city">City</option>
+                        <option value="scenic">Scenic</option>
+                    </select>
+                </div>
+                <div class="filter-group">
+                    <label><i class="fas fa-wallet"></i> Budget</label>
+                    <select id="filter-budget">
+                        <option value="all">Any Budget</option>
+                        <option value="mid">Mid-Range</option>
+                        <option value="luxury">Luxury</option>
+                    </select>
+                </div>
+                <div class="filter-group">
+                    <label><i class="fas fa-sort"></i> Sort By</label>
+                    <select id="filter-sort">
+                        <option value="popular">Popular First</option>
+                        <option value="rating">Highest Rated</option>
+                        <option value="price-low">Price: Low → High</option>
+                        <option value="price-high">Price: High → Low</option>
+                    </select>
+                </div>
+            </div>
+
+            <!-- Count + Grid -->
+            <div class="flex-between" style="margin-bottom:1.5rem">
+                <p id="dest-count" style="color:var(--muted);font-size:0.95rem"></p>
+            </div>
+            <div id="dest-grid" class="destinations-grid"></div>
+        </div>
+    </section>
+
+    <!-- NEWSLETTER -->
+    <section class="newsletter-section">
+        <div class="container">
+            <h2>Never Miss a Deal</h2>
+            <p>Get exclusive early access to our best offers before they sell out.</p>
+            <form class="newsletter-form" id="newsletter-form">
+                <input type="email" placeholder="Your email address" required>
+                <button type="submit">Get Deals <i class="fas fa-bolt"></i></button>
+            </form>
+        </div>
+    </section>
+
+    <!-- FOOTER -->
+    <footer>
+        <div class="container">
+            <div class="footer-grid">
+                <div class="footer-brand">
+                    <a href="index.html" class="logo"><i class="fas fa-compass"></i> WanderLust</a>
+                    <p>Crafting unforgettable travel experiences since 2012. Your journey, our passion.</p>
+                    <div class="footer-socials">
+                        <a href="#"><i class="fab fa-facebook-f"></i></a>
+                        <a href="#"><i class="fab fa-instagram"></i></a>
+                        <a href="#"><i class="fab fa-twitter"></i></a>
+                        <a href="#"><i class="fab fa-youtube"></i></a>
+                    </div>
+                </div>
+                <div class="footer-col">
+                    <h4>Explore</h4>
+                    <ul>
+                        <li><a href="destinations.html">All Destinations</a></li>
+                        <li><a href="destinations.html?cat=beach">Beach Getaways</a></li>
+                        <li><a href="destinations.html?cat=mountain">Mountain Retreats</a></li>
+                        <li><a href="destinations.html?cat=adventure">Adventure Tours</a></li>
+                    </ul>
+                </div>
+                <div class="footer-col">
+                    <h4>Company</h4>
+                    <ul>
+                        <li><a href="about.html">About Us</a></li>
+                        <li><a href="contact.html">Contact</a></li>
+                        <li><a href="contact.html#faq">FAQ</a></li>
+                    </ul>
+                </div>
+                <div class="footer-col">
+                    <h4>Support</h4>
+                    <ul>
+                        <li><a href="#">Booking Policy</a></li>
+                        <li><a href="#">Cancellation Policy</a></li>
+                        <li><a href="#">Privacy Policy</a></li>
+                    </ul>
+                </div>
+            </div>
+            <div class="footer-bottom">
+                <span>© 2025 WanderLust Travel. All rights reserved.</span>
+                <span>Made with <i class="fas fa-heart" style="color:var(--secondary)"></i> for explorers</span>
+            </div>
+        </div>
+    </footer>
+
+    <script src="js/script.js"></script>
+</body>
+
+</html>
