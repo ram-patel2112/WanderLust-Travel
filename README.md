@@ -8,7 +8,7 @@ WanderLust is a premium multi-page travel website designed to showcase curated d
 
 ✨ Live Preview
 
-(Add your deployed link here if hosted on Vercel / Netlify / GitHub Pages)
+🚀 **[Visit WanderLust](https://wanderlust-one-nu.vercel.app/)**
 
 
 
