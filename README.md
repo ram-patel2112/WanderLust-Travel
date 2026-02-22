@@ -24,8 +24,11 @@ WanderLust is a premium multi-page travel website designed to showcase curated d
 🛠️ Tech Stack
 
 ✅ HTML5
+
 ✅ CSS3
+
 ✅ JavaScript (Vanilla JS)
+
 ✅ Font Awesome Icons
 
 📂 Project Structure
@@ -47,8 +50,11 @@ WanderLust/
 🎯 Project Objective
 
 ✅ Demonstrate strong frontend development skills
+
 ✅ Build a visually appealing and structured travel website
+
 ✅ Implement responsive design principles
+
 ✅ Create a scalable UI layout ready for backend integration
 
 🔮 Future Improvements
@@ -65,5 +71,7 @@ WanderLust/
 WanderLust is optimized for:
 
 ✅ Desktop
+
 ✅ Tablet
+
 ✅ Mobile
